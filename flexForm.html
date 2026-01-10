@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login form</title>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-between;
+    
+        }
+      nav a {
+        text-decoration: none;
+        color: tomato;
+        font-size: 25px;
+        margin-right: 20px;
+      }
+
+      .form-container {
+        display: flex;
+        background-color: blueviolet;
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 50vh;
+        padding: 50px;
+        background-color: rgb(177, 84, 84);
+        box-shadow: 0 0 8px darkred;
+        border-radius: 5px;
+      }
+      form h2 {
+        color:antiquewhite;
+        font-size: 25px;
+      }
+      input {
+        margin-top: 15px;
+        padding: 15px 20px;
+        border-radius: 5px;
+        font-size: 18px;
+        border: 2px solid blueviolet;
+      }
+      input:focus {
+        color:brown;
+        outline: none;
+        border: 2px solid teal;
+        background-color: blanchedalmond;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <a href="">Home</a>
+        <a href="">Profile</a>
+        <a href="">Blog</a>
+      </div>
+      <div>
+        <a href="">About</a>
+        <a href="">Login</a>
+      </div>
+    </nav>
+
+    <section class="form-container">
+        <form action="">
+            <h2>Please Login</h2>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="email" placeholder="Your Password" required>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+  </body>
+</html>
